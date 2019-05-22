@@ -1,242 +1,363 @@
-.iconword{
-    padding-top: 10px;
-    padding-left: 25x;
+.iconword {
+  padding-top: 10px;
+  padding-left: 25x;
 }
 
-.navbar{
-    transition: all 0.3s;
+.navbar {
+  transition: all 0.2s;
 }
-#christy{
-    height : 100vh;
-    background-image: url(img/lt2.jpg);
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding:10%;
+.sticky-top {
+  background-color: rgb(97, 94, 94);
 }
-#christy h1{
-    font-size:45px;
-    color: rgb(121, 108, 108);
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 40em;
-    animation: type 9s steps(60, end); 
+.navbar-nav .nav-item .nav-link {
+  color: rgb(231, 225, 225);
+}
+
+#christy {
+  height: 100vh;
+  background-image: url(img/lt2.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+#christy h1 {
+  font-size: 45px;
+  color: rgb(121, 108, 108);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 19em;
+  animation: type 5s steps(60, end);
+}
+
+.helpImg {
+  max-width: 375px;
+}
+
+@keyframes type {
+  from {
+    width: 0;
   }
-  
-  @keyframes type{ 
-    from { width: 0; } 
-  } 
+}
 
-
-@media only screen and (max-width: 780px) {
-    #christy h1 {
-        font-size:19px;
-    }
+/* projetc secion */
+.projects {
+  height: 450px;
+  display: flex;
+  justify-content: space-evenly;
+  background-image: url(./assets/bricks/brick.jpg);
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color:#5c5b5b;
+}
+.projectDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.projectDiv h2 {
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  border: 5px black solid;
+  border-radius: 0.4em;
+  background-color: black;
+  padding:2px 12px 5px 12px;
+}
+.imgDiv {
+  height: 270px;
+  width: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projectImg {
+  max-height: 200px;
+  max-width: 400px;
+}
+#ac:hover {
+  max-height: 270px;
+  max-width: 480px;
+  transition: 0.2s;
+}
+#ce:hover {
+  max-height: 230px;
+  max-width: 230px;
+  transition: 0.2s;
 }
 
 .seperate {
-    background-color: beige;
-    padding-top: 1.5vh;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: beige;
+  padding-top: 1.5vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.seperate h2{
-    font-size:46px;
-    font-family:bold Georgia, Times, 'Times New Roman', serif;
-    color: rgb(85, 76, 76);
-    white-space: nowrap;
-    overflow: hidden;
-    width: 40em;
-    animation: type 15s steps(60, end); 
-}
-
-@media only screen and (max-width: 500px) {
-    .seperate h2 {
-        font-size:23px;
-    }
+.seperate h2 {
+  font-size: 46px;
+  font-family: bold Georgia, Times, "Times New Roman", serif;
+  color: rgb(114, 55, 55);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 15em;
+  animation: type 10s steps(60, end);
 }
 
-#gallery{
-    background-size: cover;
-    background-position: center center;
+#gallery {
+  background-size: cover;
+  background-position: center center;
 }
 
-
-.bullshit {
-    background: #333;
-    padding: 0 0 0%;
+.dreamSection {
+  background: #333;
+  padding: 0 0 0%;
 }
 
-.bullshit p {
-    color: rgba(255, 255, 255, 0.974);
-    padding-left:5vw;
-    padding-right:5vw;
-    font-size: 25px;
+.dreamSection p {
+  color: rgba(255, 255, 255, 0.974);
+  padding-left: 5vw;
+  padding-right: 5vw;
+  font-size: 25px;
 }
 
-.bullshit .container-fluid, .bullshit .row > div {
-    padding: 0;
-    position: relative;
+.dreamSection .container-fluid,
+.dreamSection .row > div {
+  padding: 0;
+  position: relative;
 }
 
-.bullshit .row {
-    margin: 0;
+.dreamSection .row {
+  margin: 0;
 }
 
-.bullshit .hint {
-    opacity: 0.4;
-    transition: opacity 0.5s;
-    background: rgba(36, 35, 35, 0.9);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: rgba(255, 255, 255, 0.6);
+.dreamSection .hint {
+  opacity: 0.4;
+  transition: opacity 0.5s;
+  background: rgba(36, 35, 35, 0.9);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.bullshit .hint:hover {
-    opacity: 1;
+.dreamSection .hint:hover {
+  opacity: 1;
 }
-
-@media only screen and (max-width: 650px) {
-    .bullshit p {
-        font-size: 15px;
-    }
-}
-
 
 .bs {
-    height : 100%;
-    background-image: url('img/e1help.jpg');
-    background-size:cover;
-    position:relative;
-    padding: 0 0 0%;
+  height: 100%;
+  background-image: url("img/e1help.jpg");
+  background-size: cover;
+  position: relative;
+  padding: 0 0 0%;
 }
 
 .bs p {
-    color: rgba(255, 255, 255, 0.987);
-    font-size: 25px;
+  color: rgba(255, 255, 255, 0.987);
+  font-size: 25px;
 }
 
-.bs .container-fluid, .bs .row > div {
-    padding: 0;
-    position: relative;
+.bs .container-fluid,
+.bs .row > div {
+  padding: 0;
+  position: relative;
 }
 
 .bs .row {
-    margin: 0;
+  margin: 0;
 }
 
 .bs .hint {
-    opacity: 0.4;
-    transition: opacity 0.5s;
-    background: rgba(65, 66, 65, 0.9);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: rgba(255, 255, 255, 0.6);
+  opacity: 0.4;
+  transition: opacity 0.5s;
+  background: rgba(65, 66, 65, 0.9);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .bs .hint:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
-.bs img{
-    opacity:0;
+.bs img {
+  opacity: 0;
 }
 
-.special{
-    padding-left: 15px;
+.special {
+  padding-left: 15px;
 }
 
-@media only screen and (max-width: 650px) {
-    .bs p {
-        font-size: 18px;
-    }
+#contact {
+  height: 50vw;
+  background-image: url("img/bi.jpg");
+  background-size: cover;
+  position: relative;
+  background-color: rgb(231, 236, 232);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#qrcode {
+  height: 30vh;
+}
+
+/* footer */
+.footer {
+  height: 19vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background-color: rgb(245, 242, 239);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer h2 {
+  font-size: 20px;
+  color: rgb(116, 111, 111);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.githubIcon {
+  height: 25px;
+  width: 25px;
+}
+
+.gmailIcon {
+  height: 25px;
+  width: 30px;
+}
+
+.contactMe p {
+  display: inline-block;
+  margin-bottom: 50px;
+}
+.footer p {
+  display: inline-block;
+  margin: 0px 10px 1px 10px;
+}
+
+a {
+  color: rgb(138, 59, 59);
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 850px) {
+  #qrcode {
+    height: 30vh;
+  }
+  /* project div */
+  .projects {
+    height: 300px;
+  }
+  .projectDiv h2 {
+    font-size: 25px;
+  }
+  .imgDiv {
+    height: 200px;
+    width: 320px;
+  }
+  .projectImg {
+    max-height: 150px;
+    max-width: 300px;
+  }
+  #ac:hover {
+    max-height: 200px;
+    max-width: 320px;
+  }
+  #ce:hover {
+    max-height: 180px;
+    max-width: 180px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
-    .bs {
-        background-image : url('img/helpmedia.jpg');
-    }
+  #christy h1 {
+    font-size: 19px;
+  }
+  .bs {
+    background-image: url("img/helpmedia.jpg");
+  }
 }
 
-
-#contact{
-    height : 50vw;
-    background-image: url('img/bi.jpg'); 
-    background-size:cover;
-    position:relative;
-    background-color: rgb(231, 236, 232);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#qrcode {
-    height : 30vh;
-}
-@media only screen and (max-width: 850px) {
-    #qrcode {
-        height : 30vh;
-    }
-}
-@media only screen and (max-width: 400px) {
-    #qrcode {
-        height : 10vh;
-    }
-}
-
-
-
-.footer{
-    height : 15vh;
-    padding-top: 7vh;
-    padding-bottom: 5vh;
-    background-color: rgb(239, 245, 240);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer h2,p {
-    font-size: 20px;
-    color:rgb(116, 111, 111);
-    margin-top: 1px;
-    margin-bottom: 5px;
+@media only screen and (max-width: 650px) {
+  .dreamSection p {
+    font-size: 15px;
+  }
+  .bs p {
+    font-size: 18px;
+  }
+  /* project div */
+  .projects {
+    height: 220px;
+  }
+  .projectDiv h2 {
+    font-size: 18px;
+  }
+  .imgDiv {
+    height: 140px;
+    width: 200px;
+    max-width: 260px;
+  }
+  .projectImg {
+    max-height: 80px;
+    max-width: 200px;
+  }
+  #ac:hover {
+    max-height: 120px;
+    max-width: 260px;
+  }
+  #ce:hover {
+    max-height: 120px;
+    max-width: 120px;
+  }
 }
 
 @media only screen and (max-width: 590px) {
-    .footer h2,p {
-        font-size:13px;
-    }
-}
-a {
-    color: rgb(138, 59, 59);
-    text-decoration: none;
+  .footer h2,
+  p {
+    font-size: 13px;
+  }
 }
 
+@media only screen and (max-width: 500px) {
+  .seperate h2 {
+    font-size: 23px;
+  }
+  /* project div */
+  .projects {
+    height: 400px;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
 
-
-
-
-
+@media only screen and (max-width: 400px) {
+  #qrcode {
+    height: 10vh;
+  }
+}
